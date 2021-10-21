@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+body{
+    background-image: url(image/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    animation: slide 10s infinite;
+}
+
+
+.reg-form{
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    background: rgba(42, 42, 42, 0.4);
+    padding: 60px 45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    color: #FFF;
+}
+.reg-form .title hr{
+    border-top: 2px solid #E88484;
+}
+.reg-form .title{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 26px;
+    color:#ECA2A2;
+}
+.reg-form .input_field{
+    position: relative;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.reg-form .input_field .input{
+    width: 100%;
+    padding: 12px;
+    padding-left: 30px;
+    border-radius: 10px solid black;
+}
+.reg-form .input_field span{
+    color: #fd9b9b;
+}
+
+.reg-form .btn1{
+    width: 98%;
+    margin: 20px auto 0;
+    padding: 12px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #E88484;
+}
+.reg-form .btn2{
+    width: 98%;
+    margin: 20px auto 0;
+    padding: 12px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #7AC9F5;
+}
+.reg-form a{
+    color: black;
+    text-decoration: none;
+}
+
+.reg-form .btn1:hover{
+    background-color: #d67b7b;
+}
+
+.reg-form .btn2:hover{
+    background-color: #70b8df;
+}
+
+@keyframes slide{
+    0%{background-image: url(image/img1.jpg);}
+    33%{background-image: url(image/img2.jpg);}
+    67%{background-image: url(image/img3.jpg);}
+}
+
