@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    background-color: #2b2b2b;
+    
 }
 
 body {
@@ -97,6 +97,7 @@ body {
 background-color: #2b2b2b;
 min-height: calc(100vh - 50px);
 color: white;
+
 }
 
 
@@ -216,9 +217,9 @@ color: white;
       
 .second-navbar-list li a:hover {
         
-    background-color: rgb(112, 103, 103);    
+    background-color: rgb(77, 77, 126);    
     text-decoration: none;
-    color:rgb(0, 0, 0); 
+ 
 
 }
       
@@ -233,25 +234,29 @@ color: white;
 }
 
 .Gallery{
-    margin-right:2%;
-    margin-left:2%;
+    margin-left:10%;
+    margin-right:10%;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     overflow:hidden;
+    justify-content: center;
    
 
 }
 
 .Pictors{
+    position: relative;
     width: 33.33%;
     height: 33.33%;
     margin: 20px;
+    display: flex;
+    justify-content: 0;
 }
 
 .Viktor{
     max-width: 100%;
+    display: block;
     height: 100%;
     left: 0px;
     right: 0px;
@@ -260,3 +265,65 @@ color: white;
 
 
 
+
+
+ .pictoverlay{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.6);
+     color: white;
+     display: flex;
+     background-color:transparent;
+     font-family: 'Quicksand', sans-serif;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     opacity:0;
+
+ }
+
+ .pictoverlay > *{
+     transform: translateY(20px);
+     transition: transform 0.25s;
+ }
+ .pictoverlay:hover{
+     opacity:1;
+     transition: opacity 0.25s;
+ }
+
+ .pictoverlay:hover > *{
+     transform:translateY(0);
+     
+ }
+
+ .pictoverlay-blur{
+     backdrop-filter: blur(5px);
+ }
+
+ .imgtitle{
+     font-size: 2em;
+     font-weight:bold;
+     background: none;
+ }
+
+ .description{
+     font-size: 1.25em;
+     background: none;
+ }
+
+ .Open{
+     border: 10px solid rgb(77, 77, 126);
+     border-radius: 10px;
+     background-color: rgb(77, 77, 126);
+ }
+
+.OpenB{
+    position:relative;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: white;
+    background: none;
+}
