@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+}
+
+body {
+    font-family: 'Saira Semi Condensed';
+    background-color: #2b2b2b;
+
+}
+.navbar-xxx{
+    width: 100%;
+    height: 50px;
+    background-color: #222222;
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+}
+
+.logo-container{
+    flex: 2;
+}
+
+.logo{
+    font-size: 30px;
+    color: beige;
+    cursor: pointer;
+}
+
+.menu-container{
+    flex: 5;
+}
+
+.menu-list{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+}
+
+.menu-item{
+    margin-right: 30px;
+}
+
+.profile-container{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.profile-text{
+    margin: 0 20px;
+}
+
+.profile-pic{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.toggle{
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.toggle-icon{
+    color: goldenrod;
+}
+
+.toggle-ball{
+    width: 18px;
+    height: 18px;
+    background-color: #222222;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.container-xxx{
+    background-color: #2b2b2b;
+    min-height: calc(100vh - 50px);
+    color: white;
+}
+
+.indiv-art{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.art-info{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.art-desc{
+    margin-left: 50px;
+    margin-top: none;
+}
+.title{
+    margin-top: 10px;
+}
+.author{
+    margin-top: 10px;
+}
+.desc{
+    margin-top: 20px;
+    width: 400px;
+    justify-content: center;
+    text-align: justify;
+}
+
+.posted-art{
+    width: 900px;
+    height: 700px;
+    object-fit: cover;
+}
+
+
+@media only screen and (max-width: 940px){
+    .menu-container{
+        display: none;
+    }
+}
+
+/*lightmode*/
+body.active{
+    background-color: beige;
+
+}
+.container-xxx.active{
+    background-color: beige;
+}
+
+.art-info.active{
+    color: black;
+}
+
+
+.navbar-container.active{
+    background-color: rgb(224, 224, 203);
+    color: black;
+}
+
+
+.logo.active{
+    color: black;
+}
+
+.toggle.active{
+    background-color: #151515;
+}
+
+.toggle-ball.active{
+    background-color: rgb(224, 224, 203);
+    transform: translateX(-20px);
+}
