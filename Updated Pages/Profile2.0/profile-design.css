@@ -327,3 +327,36 @@ color: white;
     color: white;
     background: none;
 }
+
+
+.logo.active{
+    color: black;
+}
+
+.navbar-container.active{
+    background-color: beige;
+    color: black;
+}
+
+.second-navbar-list.active{
+    background-color: rgb(161, 161, 144);
+
+}
+
+.Gallery.active{
+    background-color: beige;
+}
+
+.navbar-container.active li a:hover{
+    background-color: rgb(241, 241, 180);
+    color: black;
+}
+
+.container.active{
+    background-color: beige;
+}
+
+.toggle-ball.active{
+    background-color: beige;
+    transform: translateX(-20px);
+}
